@@ -3,38 +3,22 @@ package com.sheoanna;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Hello world!
- */
 public final class App {
     private App() {
     }
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
-        int number  = 371;
-        List<Integer> numbers = new ArrayList<>();
-        int sumOfPows = 0;
+       ArmstrongNumber number = new ArmstrongNumber(371);
+       System.out.println(number.checkIsArmstrongNumber());
 
-        String stringNumber = String.valueOf(number);
+       ArmstrongNumber number2 = new ArmstrongNumber(1634);
+       System.out.println(number2.checkIsArmstrongNumber());
 
-        for (char i : stringNumber.toCharArray()) {
-            Integer numberToInt = Integer.parseInt(String.valueOf(i));//Integer numberToInt = Integer.valueOf(i);
-            numbers.add(numberToInt);
-        }
+       ArmstrongNumber number3 = new ArmstrongNumber(351);
+       System.out.println(number3.checkIsArmstrongNumber());
 
-        for(int item :numbers) {
-            sumOfPows += Math.pow(item, numbers.size());
-            System.out.println(sumOfPows);
-        }
+       ArmstrongNumber number4 = new ArmstrongNumber(2015);
+       System.out.println(number4.checkIsArmstrongNumber());
 
-
-        
-       //IsArmstrongNumber number = new IsArmstrongNumber(371);
-       //System.out.println(number.isArmstrongNumber());
     }
-
-
 }
