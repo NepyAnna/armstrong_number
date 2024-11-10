@@ -19,12 +19,16 @@ public final class App {
         int sumOfPows = 0;
 
         String stringNumber = String.valueOf(number);
+
         for (char i : stringNumber.toCharArray()) {
             Integer numberToInt = Integer.parseInt(String.valueOf(i));//Integer numberToInt = Integer.valueOf(i);
             numbers.add(numberToInt);
         }
 
-        
+        for(int item :numbers) {
+            sumOfPows += Math.pow(item, numbers.size());
+            System.out.println(sumOfPows);
+        }
 
 
         
