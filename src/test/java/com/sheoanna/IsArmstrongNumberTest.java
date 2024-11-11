@@ -17,6 +17,7 @@ public class IsArmstrongNumberTest {
     void setUp(){ 
         number = new ArmstrongNumber(371);
         symbols = number.getsymbolsFromNumber(number.getNumber());
+        sumOfPows = number.getSumOfNemberPows(symbols);
     }
 
     @Test
@@ -26,8 +27,7 @@ public class IsArmstrongNumberTest {
 
     @Test
     void getSumOfNemberPowsTest() {
-        sumOfPows = 0;
-
+        assertEquals(371, sumOfPows);
     }
 
 }

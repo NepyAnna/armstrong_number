@@ -11,15 +11,15 @@ public class ArmstrongNumber {
     }
 
     public List<Integer> getsymbolsFromNumber(int number) {
-        List<Integer> numbers = new ArrayList<>();
+        List<Integer> symbols = new ArrayList<>();
 
         String stringNumber = String.valueOf(this.classNumber);
 
         for (char i : stringNumber.toCharArray()) {
             int numberToInt = Integer.parseInt(String.valueOf(i));
-            numbers.add(numberToInt);
+            symbols.add(numberToInt);
         }
-        return numbers;
+        return symbols;
     }
    
     public int getSumOfNemberPows(List<Integer> numbers){
