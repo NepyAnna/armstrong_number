@@ -22,11 +22,11 @@ public class ArmstrongNumber {
         return symbols;
     }
    
-    public int getSumOfNemberPows(List<Integer> numbers){
+    public int getSumOfNemberPows(List<Integer> symbols){
         int sumOfPows = 0;
         
-        for(int item :numbers) {
-            sumOfPows += Math.pow(item, numbers.size());
+        for(int item :symbols) {
+            sumOfPows += Math.pow(item, symbols.size());
         }
         return sumOfPows;
     }

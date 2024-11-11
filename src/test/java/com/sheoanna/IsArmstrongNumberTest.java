@@ -30,4 +30,9 @@ public class IsArmstrongNumberTest {
         assertEquals(371, sumOfPows);
     }
 
+    @Test
+    void checkIsArmstrongNumberTest() {
+        assertTrue(number.checkIsArmstrongNumber());
+    }
+
 }
